@@ -1,0 +1,285 @@
+/**
+ * 2014 Stigmi
+ *
+ * @author    Stigmi.eu <www.stigmi.eu>
+ * @copyright 2014 Stigmi
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+option:disabled {
+  background-color: #eee;
+  font-style: italic;
+  color: #999; }
+
+#bpost-settings fieldset a, #bpost-settings fieldset a.active, #bpost-settings fieldset a.focus, #bpost-settings fieldset a.hover, #bpost-settings fieldset a.visited {
+  text-decoration: underline; }
+#bpost-settings fieldset legend img {
+  height: 16px; }
+#bpost-settings fieldset ul {
+  list-style: disc inside none;
+  padding-left: 0; }
+#bpost-settings form {
+  /*margin-top: 20px;*/ }
+  #bpost-settings form label {
+    cursor: pointer; }
+  #bpost-settings form select.fixed-width-xs {
+    display: inline-block; }
+  #bpost-settings form input[type="text"] {
+    max-width: 60%; }
+  #bpost-settings form #account_api_url {
+    font-style: italic; }
+  #bpost-settings form .hidden {
+    display: none; }
+  #bpost-settings form .control-label-bw {
+    float: left;
+    font-weight: bold;
+    padding: .2em .5em 0 0;
+    text-align: right;
+    text-shadow: 0 1px 0 #fff;
+    width: 250px; }
+  #bpost-settings form .margin-form {
+    font-size: 100%; }
+    #bpost-settings form .margin-form label {
+      font-weight: normal; }
+      #bpost-settings form .margin-form label img {
+        margin-left: 3px;
+        position: relative;
+        top: -1px; }
+  #bpost-settings form .radio label {
+    float: none; }
+  #bpost-settings form .select-multiple {
+    margin-left: 260px;
+    width: 60%; }
+    #bpost-settings form .select-multiple select {
+      height: 150px;
+      width: 100%; }
+    #bpost-settings form .select-multiple img {
+      cursor: pointer;
+      padding: 10px 0;
+      vertical-align: middle; }
+    #bpost-settings form .select-multiple #add_country,
+    #bpost-settings form .select-multiple #remove_country {
+      opacity: .3; }
+  #bpost-settings form.v1-4 .radio, #bpost-settings form.v1-5 .radio {
+    padding-bottom: 0; }
+  #bpost-settings form.v1-4 .checkbox label,
+  #bpost-settings form.v1-4 .switch label, #bpost-settings form.v1-5 .checkbox label,
+  #bpost-settings form.v1-5 .switch label {
+    float: none;
+    width: auto; }
+  #bpost-settings form.v1-4 .margin-form, #bpost-settings form.v1-5 .margin-form {
+    line-height: 20px; }
+    #bpost-settings form.v1-4 .margin-form + .margin-form, #bpost-settings form.v1-5 .margin-form + .margin-form {
+      margin-top: -.8em; }
+  #bpost-settings form.v1-4 .control-label-bw {
+    width: 200px; }
+
+#adminordersbpost #idTabs li {
+  display: inline-block; }
+#adminordersbpost #idTabs a {
+  background-color: #f8f8f8;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 1px 0;
+  border-radius: 3px 3px 0 0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  margin-right: 3px;
+  padding: 0 15px; }
+  #adminordersbpost #idTabs a.selected {
+    background-color: #49b2ff;
+    color: #fff; }
+#adminordersbpost .block_hidden_only_for_screen {
+  display: none; }
+
+#order_actions a {
+  cursor: pointer;
+  text-decoration: underline; }
+
+/* Serge 11-06-15 */
+div.order-details {
+  background: url(../img/sp.png) no-repeat;
+  background-size:auto 70px;
+  padding:20px 0px;
+  margin-top: 10px;
+}
+div.order-details h4 {
+  margin-left:60px;
+}
+/* Serge 30-06-15 */
+.delopt-tabs {
+  float: left;
+  margin-right: 30px;
+}
+.delopt-tab-row {
+  list-style: none;
+}
+.delopt-tab-row a {
+  display: block;
+  width: 180px;
+  background: white;
+  border: 1px solid #ccc;
+  text-decoration: none !important;
+  padding: 8px 12px 7px 12px;
+  text-align: left;
+}
+.delopt-tab-row a.selected {
+  background: none;
+  border-right: none;
+  border-top: none;
+  font-weight: 600;
+}
+/* Serge 15-07-15 */
+.tab-wrapper {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 0px;
+  border: 0px;
+}
+.bpost-tabs {
+  padding-left: 0px;
+  margin:0;
+  list-style-type: none;
+  text-align: left;
+}
+.bpost-tabs li {
+  display: inline-block;
+  margin: -1px;
+}
+.bpost-tabs li a {
+  display: block;
+  background: white;
+  border: 1px solid #ccc;
+  text-decoration: none !important;
+  padding: 8px 14px 8px 14px;
+  margin-right: -2px;
+  text-align: left;
+  font-weight: 500;
+
+}
+.bpost-tabs li a.selected {
+  background: none;
+  border-bottom: none;
+  font-weight: 600;
+}
+/**/
+#num-dates, #ship-delay, #cutoff-time {
+  width: 54px;
+}
+input{
+display: inline !important;
+margin-right: 4px;
+}
+.panel-footer {
+margin-bottom:0px !important;
+}
+/* Serge 25-09-15 */
+.order-bpost-status,
+.order_bpost-delivery-method {
+  display: table-cell;
+  height: 100%
+  vertical-align: middle;
+  /*padding-right: 2em;*/
+}
+/*.order-bpost-status.late {
+  border-right: 2px solid #da2;
+}
+.order-bpost-status.urgent {
+  border-right: 2px solid #d22;
+}*/
+.status-count {
+  margin-left: .5em;
+  font-size: .85em !important;
+  vertical-align: middle !important;
+  color: #999 !important;
+}
+.status-main {
+  /*font-size: .8em !important;*/
+  color: #343 !important;
+}
+.status-main.late {
+  color: #c92 !important;
+}
+.status-main.urgent {
+  font-weight: 700;
+  color: #c22 !important;
+}
+/* delivery-method */
+.dm-list {
+  margin: 2px !important;
+  padding: 2px !important;
+}
+.dm-list li {
+  list-style: none;
+  padding: 0px;
+  white-space: nowrap;
+  font-size: 10px;
+  line-height: 14px;
+  color: #888;
+}
+.eonbox-err h4 {
+  font-style: italic;
+  color: #ca2;
+}
+.eonbox-err li {
+  list-style: none;
+  white-space: nowrap;
+  font-size: 11px
+}
+/* Srg: 31-3-16 */
+.process-icon-new {
+  cursor: default;
+  opacity: 0.4;
+}
+/* Srg: 15-4-16 */
+.hammered {
+  color: #c22 !important;
+  font-weight: 500;
+}
+/* Srg: 26-7-16; */
+select#treated_order_state {
+  width: 200px;
+}
+.os-box {
+  display: inline-block;
+  margin-right: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: #f90 !important;
+}
+/* Srg: 5-8-16; */
+select#sd-country {
+  width: 150px;
+}
+/* Srg: 11-8-16 */
+span#tracie {
+  color: #c22;
+  font-weight: 500;
+}
+/* Srg: 26-8-16 */
+.super-sup {
+  margin-right: 10px;
+  color: #c62;
+  font-size: 1.2em;
+}
+/* Srg: 21-9-16 */
+div.infoPanel {
+  padding: 15px;
+}
+div.infoPanel > ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+p.admin-lo {
+  margin-top: 20px;
+  font-style: italic;
+  color: #aaa;
+  font-size: .9em
+}
+p.admin-lo > a {
+  /*color: #268CCD;
+  text-decoration: underline;*/
+  color: #00aff0;
+  text-decoration: none;
+}
+/* Serge end */

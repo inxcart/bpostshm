@@ -1,0 +1,119 @@
+/**
+ * 2015 Stigmi
+ *
+ * @author    Serge <serge@stigmi.eu>
+ * @copyright 2015 Stigmi
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+.col-xs-4,
+.col-xs-6,
+.col-xs-8,
+.col-xs-12 {
+  float: left;
+  padding: 0 15px;
+  position: relative; }
+
+.col-xs-4 {
+  width: 33.3333%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-8 {
+  width: 66.6667%; }
+/*
+.col-xs-12 {
+  width: 100%; }
+*/
+.alpha {
+  padding-left: 0; }
+
+.omega {
+  padding-right: 0; }
+
+#cbox {
+  position: relative;
+  display: none;
+  width: 100%;
+  /*display: block;*/
+  margin-top: 5px;
+  color: #444;
+}
+.ajax-cbox-overlay {
+  /*opacity: 0.7;*/
+  opacity: 0.5;
+  position:absolute;
+  top:0; bottom:0;
+  left:0; right:0;
+  z-index:199;
+  background:#fff url(../img/ajax-loader2.gif) no-repeat center;
+  border-radius: inherit;
+}
+.delivery_option label > table.resume td {
+}
+/*td.delivery_option_radio,*/
+td.delivery_option_logo {
+  vertical-align: top;
+  padding-top: 4px !important;
+}
+/**/
+#btn-sp {
+   margin: 5px 0 2px;
+}
+#del-info {
+  display: block;
+  /*width: 100%;*/
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-style: italic;
+  color: #878;
+}
+div.address {
+  /*margin-left: 25px;*/
+}
+span.title {
+  display: block;
+  font-weight: 600;
+}
+a.sp-change {
+  cursor: pointer;
+  color: #09f;
+  text-decoration: none;
+}
+a.sp-change:hover {
+  color: #f40;
+  text-decoration: underline;
+}
+div#sect-delivery {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/**/
+.no-address {
+  display: block;
+}
+.no-address.ps16 {
+  margin:  20px 0px;
+  padding: 15px 15px 15px 170px;
+  border: 1px solid #ccc;
+  color: #F13340;
+  font-weight: 700;
+}
+.no-address.ps15 {
+  margin: 0;
+  padding: 10px;
+  background-color: #Ffd;
+  border: 1px solid #e6db55;
+  font-size: 13px;
+}
+.no-address.ps14 {
+  display: table-cell;
+  width: 980px;
+  color: black;
+  font-size: 1.2em;
+  background-color: #F8E1A0;
+  border: 1px dashed #F9E400;
+  font-weight: bold;
+  margin: 0.2em 2em;
+  padding: 0.6em 1em;
+}

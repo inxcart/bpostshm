@@ -1,0 +1,31 @@
+<?php
+
+global $_MODULE;
+$_MODULE = [];
+$_MODULE['<{bpostshm}prestashop>bpostshm_f0356eaa6b70fa09769c4020e737510c'] = 'Allow your customers to choose their preferred delivery method: delivery at home or the office, at a pick-up location or in a parcel locker.';
+$_MODULE['<{bpostshm}prestashop>bpostshm_ca9a20b226cd21171a932d9cf0eff7e9'] = 'This option provides automatically a second presentation at the receiver\'s address should he be absent upon first presentation.';
+$_MODULE['<{bpostshm}prestashop>bpostshm_8bea4acf5f0e334a587844dd6563bcd5'] = 'Pick-up point: Belgium';
+$_MODULE['<{bpostshm}prestashop>bpostshm_e72dca5d5a8a4706a206f3225324bf44'] = 'Sender name';
+$_MODULE['<{bpostshm}prestashop>bpostshm_85f36308ceb6d6d5963f0a44d4ecf4c3'] = 'Displayed on the labels, as the sender';
+$_MODULE['<{bpostshm}prestashop>bpostshm_05050fa123b9898f82597d146d168c44'] = 'To refresh bpost order status (after an initial Print), you can use the following URL in order to set up a cron task.';
+$_MODULE['<{bpostshm}prestashop>settings_5f37c6a86eb1214bfa765305ff2c1ce1'] = 'bpost Shipping Manager is a service offered by bpost, allowing your customer to choose their preferred delivery method when ordering in your webshop.';
+$_MODULE['<{bpostshm}prestashop>settings_f18908b036a71d3d4c0eeb2b77b03d97'] = 'Be careful, if you don\'t use Prestashop to manage labels AND you let the customer choose the delivery date (Saturday or free choice during the week), the required drop date in the bpost network will NOT be displayed in Shipping Manager';
+$_MODULE['<{bpostshm}prestashop>settings_d3800de167d3bcbee0cd38b20aa68b50'] = 'Do not display delivery date, when at least one product in the cart is out of stock.';
+$_MODULE['<{bpostshm}prestashop>settings_fad904d448b7d1715d28e920271fb8ea'] = '  ';
+$_MODULE['<{bpostshm}prestashop>settings_9761f5b078206ac38ca81baff07bcc76'] = 'The \'final\' PrestaShop order state, when you \"Mark\" your bpost orders as \"treated\"';
+$_MODULE['<{bpostshm}prestashop>settings_07d3f75d43e3d59e77260520d1b1c440'] = 'Printed orders are automatically marked as treated';
+$_MODULE['<{bpostshm}prestashop>settings_f5281ce2f3c445c643a3741565684bfd'] = '  ';
+$_MODULE['<{bpostshm}prestashop>settings_f1b85bc5680663defb629b021c9ee93d'] = '  ';
+$_MODULE['<{bpostshm}prestashop>settings_d60be3caf3c7010cb567d3524cf4d088'] = 'Select which product to use for international shipments.';
+$_MODULE['<{bpostshm}prestashop>settings_9049f152c7806c5948482a4a31eb800b'] = 'Configure prices for carrier bpost using existing PrestaShop zones';
+$_MODULE['<{bpostshm}prestashop>settings_0bf536392a0e7fd5d94ea20c801a0189'] = 'Configure the prices used by carrier bpost, by creating new zones';
+$_MODULE['<{bpostshm}prestashop>settings_20207e143c941b1a5d871cd9364470ae'] = 'PrestaShop uses zones to configure prices for carriers. By default, all countries are regrouped under large zones (e.g. Europe). If you want to set prices per country, you need to create custom zones and assign each country in a zone. We offer you the possibility to automatically create new zones based on the countries activated in the Shipping Manager. Keep in mind that by creating new zones, this will have an impact on ALL carriers. If you create unwanted zones, you will have to delete them manually. In order to allow shipping for a country outside Belgium, you will need to have the country included in a valid PrestaShop zone + specifically activate this country in a price zone within the Shipping Manager. Only PrestaShop prices will be used and displayed to your clients.';
+$_MODULE['<{bpostshm}prestashop>settings_4addbe59141a1ad1dd2d6dfe7c783602'] = 'Added shipping costs';
+$_MODULE['<{bpostshm}prestashop>form-upl_b114d04b61b18a435037c07305ee02fa'] = 'http://www.bpost.be/site/fr/residential/parcels/pickup/bpack247.html';
+$_MODULE['<{bpostshm}prestashop>form-upl_919d3cb99671b89ec28f2118afebf6bb'] = 'You can also receive by SMS your unique delivery code and be informed when your order has been delivered.';
+$_MODULE['<{bpostshm}prestashop>form-upl_31d0738312e6b1370faf3786763a59fa'] = 'This zone allows people with reduced mobility to access the most convenient lockers of the parcels locker.';
+$_MODULE['<{bpostshm}prestashop>adminordersbpost-header_4add50afd219cfba2051773793326913'] = 'Print your labels here for your bpost orders within the limit of 30kgs per shipment. In order that each shipment doesn’t exceed 30 kgs, several labels will be automatically created based on the order weight. If necessary, for packaging reasons, you can always add additional labels.';
+$_MODULE['<{bpostshm}prestashop>adminordersbpost-header_aceb26ed3287ee7093e2b42d623582fa'] = 'Remember that you can configure the module to automate actions following the generation of labels:';
+$_MODULE['<{bpostshm}prestashop>adminordersbpost-header_6208716c9886a3ad26db9b7a7c87b9e6'] = 'Sending an email to the customer with tracking code';
+$_MODULE['<{bpostshm}prestashop>adminordersbpost-header_9de691464111bafcfbb420b433c49a36'] = 'Update the Prestashop status of the order';
+$_MODULE['<{bpostshm}prestashop>adminordersbpost-header_862bd3e7186c9d53d0ec33f9baece3dc'] = 'Switch order to the “Treated” tab ...';

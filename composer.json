@@ -1,0 +1,19 @@
+{
+    "name": "thirtybees/bpostshm",
+    "description": "Bpost module for thirty bees",
+    "type": "library",
+    "license": "OSLv3",
+    "authors": [
+        {
+            "name": "Michael Dekker",
+            "email": "git@michaeldekker.nl"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "BpostModule\\": "classes/"
+        },
+        "classmap": ["lib/Eontech/"]
+    }
+}
