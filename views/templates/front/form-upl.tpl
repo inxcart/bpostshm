@@ -61,7 +61,7 @@
 				style: { classes:'qtip-bootstrap' },
 				content: { text: '' }
 			},
-			tip_rmz = $.extend(true, {}, tip_mobile);
+			tip_rmz = $.extend(true, {ldelim}{rdelim}, tip_mobile);
 			tip_mobile.content.text = "{l s='Mobile number info' mod='bpostshm' js=1}";
 			tip_rmz.content.text = "{l s='Reduced mobility zone info' mod='bpostshm' js=1}";
 			$('[data-tip="mobile"]').qtip(tip_mobile);

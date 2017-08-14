@@ -15,7 +15,7 @@
       $(".ajax_table_link").click(function () {
         var link = $(this);
         $.post($(this).attr('href'), function (data) {
-          if (data.success == 1) {
+          if (data.success) {
             showSuccessMessage(data.text);
             if (link.hasClass('action-disabled')) {
               link.removeClass('action-disabled').addClass('action-enabled');
@@ -322,7 +322,7 @@
                           <option value="" {if $params.value == ''} selected="selected" {/if}>-</option>
                           {if isset($params.list) && is_array($params.list)}
                             {foreach $params.list AS $option_value => $option_display}
-                              <option value="{$option_value|escape:'htmlall':'UTF-8'}" {if (string)$option_display === (string)$params.value ||  (string)$option_value === (string)$params.value} selected="selected"{/if}>{$option_display|escape:'htmlall':'UTF-8'}</option>
+                              <option value="{$option_value|escape:'htmlall':'UTF-8'}" {if $option_display === $params.value || $option_value === $params.value} selected="selected"{/if}>{$option_display|escape:'htmlall':'UTF-8'}</option>
                             {/foreach}
                           {/if}
                         </select>

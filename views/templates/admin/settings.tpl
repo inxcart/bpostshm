@@ -794,7 +794,7 @@
         style: { classes: 'qtip-bootstrap' },
         content: { text: '' }
       },
-      tip_cost = $.extend(true, {}, tip_from);
+      tip_cost = $.extend(true, {ldelim}{rdelim}, tip_from);
     tip_from.content.text = "{l s='Minimum purchase total required in order to trigger the option excluding taxes & shipping costs' mod='bpostshm' js=1}";
     tip_cost.content.text = "{l s='added shipping costs' mod='bpostshm' js=1}";
     $('[data-tip="from"]').qtip(tip_from);
@@ -902,31 +902,29 @@
       $.ajax({
         type: "GET",
         url: "{$url_get_enabled_countries|escape:'javascript'}",
-        data: {},
+        data: {ldelim}{rdelim},
         contentType: "application/json; charset=utf-8",
         dataType: "json"
       })
         .success(function (data) {
-          if (data.Error){trace(data.
-                  Error);
-                  }else
-          {
+          if (data.Error) {
+            trace(data.Error);
+          } else {
             $options = '';
             $.each(data, function (key, value) {
               $options += '<option value="' + key + '">' + value + '</option>';
             });
 
-            if ($options.length){$('
-                #country-list').html($options);
-                    }
-              }
+            if ($options.length) {
+              $('#country-list').html($options);
+            }
+          }
           refreshingList(false);
         })
         .error(function (error_msg) {
           trace("{l s='Unable to retrieve the list. Please try again later.' mod='bpostshm'}");
           refreshingList(false);
         });
-
     }
 
     $('input[name="country_international_orders"]').live('change', function () {
@@ -937,22 +935,19 @@
     $('button[name="submitCountrySettings"]').live('click', function (e) {
       // e.preventDefault();
       eclist = $('#enabled-country-list').children();
-      if (eclist.length){$.each(eclist, function ( ) {
-              this.selected = true;
-              });
-  }
-  else {$(' #enabled-country-list').html('
-          <option selected value="REMOVE">(empty)</option>');
-  }
-  })
-  ;
+      if (eclist.length) {
+        $.each(eclist, function () {
+          this.selected = true;
+        });
+      } else {
+        $(' #enabled-country-list').html('<option selected value="REMOVE">(empty)</option>');
+      }
+    });
 
-  //
-  // $('input[name="label_use_ps_labels"]').live('change', function() {
-  // 	$(this).closest('.form-group').nextAll('.form-group').toggleClass('hidden');
-  // });
-
-  })
-  ;
+    //
+    // $('input[name="label_use_ps_labels"]').live('change', function() {
+    // 	$(this).closest('.form-group').nextAll('.form-group').toggleClass('hidden');
+    // });
+  });
 </script>
 </div>
