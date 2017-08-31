@@ -7,8 +7,8 @@
 //<![CDATA[
 
 var _custom = ['tr', 3],
-	_prestacrea = ['div', 2];
-	
+  _prestacrea = ['div', 2];
+
 // uncomment (only one) of the following lines to
 // to affect the target element for the bpost carrier box.
 
@@ -20,11 +20,16 @@ var _custom = ['tr', 3],
 // *** Do NOT modify below here ***
 // ********************************
 function getCBT() {
-	cbt = [];
-	if ('undefined' !== typeof(cb_mode)) cbt = cb_mode;
+  cbt = [];
+  if ('undefined' !== typeof(cb_mode)) {
+    cbt = cb_mode;
+  }
 
-	return cbt;
+  console.log(cbt);
+
+  return cbt;
 }
+
 // _parent = 'div';
 // _parent = 'tr';
 // 
@@ -32,9 +37,15 @@ function getCBT() {
 // _child = 3;
 // _child = 4;
 function getCBT2() {
-	cbt = [];
-	if ('undefined' !== typeof(_parent) && 'undefined' !== typeof(_child)) { cbt[0]=_parent; cbt[1]=_child; }
-	
-	return cbt;
+  cbt = [];
+  if ('undefined' !== typeof(_parent) && 'undefined' !== typeof(_child)) {
+    cbt[0] = _parent;
+    cbt[1] = _child;
+  }
+
+  console.log(cbt);
+
+  return cbt;
 }
+
 //]]>

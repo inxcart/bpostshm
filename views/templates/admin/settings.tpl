@@ -771,8 +771,10 @@
           sup.after(warner);
           for (var flash = 0; flash < 2; flash++)
             // elm.delay(100).fadeOut().fadeIn('slow');
-                  {elm.fadeOut('slow').fadeIn('slow');
-                  }{
+                  {
+										elm.fadeOut('slow').fadeIn('slow');
+                  }
+                  {
             setTimeout(function () {
               sup.removeClass('super-sup');
               $('span.hammered').remove();

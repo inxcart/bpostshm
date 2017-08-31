@@ -122,20 +122,21 @@ class CartBpost extends \ObjectModel
      */
     public static function getByPsCartID($tbCartId)
     {
+        $cartBpost = new CartBpost();
+
         $result = \Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow(
             (new \DbQuery())
-                ->select('`id_cart_bpost`')
+                ->select('*')
                 ->from('cart_bpost')
                 ->where('`id_cart` = '.(int) $tbCartId)
         );
 
         if (isset($result['id_cart_bpost'])) {
-            return new CartBpost((int) $result['id_cart_bpost']);
+            $cartBpost->hydrate($result);
+        } else {
+            $cartBpost->id_cart = (int) $tbCartId;
+            $cartBpost->save();
         }
-
-        $cartBpost = new CartBpost();
-        $cartBpost->id_cart = (int) $tbCartId;
-        $cartBpost->save();
 
         return $cartBpost;
     }

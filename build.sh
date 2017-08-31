@@ -5,6 +5,7 @@ composer install --no-dev
 composer -o dump-autoload
 
 FILES=("logo.gif")
+FILES+=("cache.php")
 FILES+=("logo.png")
 FILES+=("Readme.md")
 FILES+=("${CWD_BASENAME}.php")
